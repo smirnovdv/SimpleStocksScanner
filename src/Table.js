@@ -57,7 +57,7 @@ export default class Table extends Component {
 	      <th>{row.ticker}</th>
 				<td>{row.pricechange + '%'}</td>
 				<td>{row.last}</td>
-				<td>{row.vwap}</td>
+				{/* <td>{row.vwap}</td> */}
 				<td>{row.volume/10 + 'K'}</td>
 				<td>{(row.volume*100/row.tradecount).toFixed(0) || "-"}</td>
 				<td>{row.shortableshares || "-"}</td>
@@ -74,7 +74,7 @@ export default class Table extends Component {
 							<th >Ticker</th>
 							<th >Daily Change</th>
 							<th >Last Price</th>
-							<th >VWAP</th>
+							{/* <th >VWAP</th> */}
 							<th >Volume</th>
 							<th >Av. Trade</th>
 							<th >Shortatable</th>
